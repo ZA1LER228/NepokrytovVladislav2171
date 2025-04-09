@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Shop - Оформление заказа</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url(background-pay.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: Roboto, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px; /* Добавляем отступы */
+            position: relative; /* Устанавливаем позиционирование для body */
+        }
+        .top-left {
+            position: fixed; 
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: auto;
+            z-index: 1000;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 2; /* z-index для overlay */
+        }
+
+        #number {
+            font-size: 48px;
+            color: #333;
+        }
+        h1 {
+            margin: 0; /* Убираем отступы */
+            font-size: 50px;
+            text-align: center; /* Центрируем заголовок */
+            position: relative; /* Устанавливаем позиционирование */
+            z-index: 3; /* Убедитесь, что z-index больше, чем у overlay */
+        }
+        h2 {
+            margin: 0; /* Убираем отступы */
+            font-size: 30px;
+            position: absolute; /* Устанавливаем абсолютное позиционирование */
+            top: 200px; /* Устанавливаем верхний отступ */
+            left: 50%; /* Центрируем по горизонтали */
+            transform: translateX(-50%); /* Центрируем элемент по горизонтали */
+            width: auto; /* Убираем ограничение ширины */
+            text-align: center; /* Центрируем текст */
+            line-height: 1.4; /* Увеличиваем межстрочный интервал для лучшей читаемости */
+            z-index: 4; /* Устанавливаем z-index больше, чем у overlay */
+        }
+        .top-support {
+            position: absolute; 
+            top: 510px;
+            left: 820px;
+            width: 500px;
+            height: 105px;
+            z-index: 1000; /* Высокий z-index для кнопки */
+            border-radius: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a href="beta2.html"> 
+        <img src="KEYShop.png" alt="Описание картинки" class="top-left">
+    </a>
+    <div class="overlay"></div>
+    <h1>Оформление заказа Key Shop</h1>
+    <h2>Пожалуйста напишите нам на почту какую игру вы хотите купить и логин от аккаунта Steam, затем по почте вам будет отправлен счет для оплаты. После чего к вам в друзья попросится Steam аккаунт с именем "Philip", добавьте его в друзья и ожидайте игру в течение 15-20 минут. <br>Почта:<br> key-shop2025@mail.ru</h2>
+    <br>
+    <a href="https://mail.ru/" target="_blank" class="top-support" title="Mail">Перейти на @mail.ru</a>
+
+</body>
+</html>

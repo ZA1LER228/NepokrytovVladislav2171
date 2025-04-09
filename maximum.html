@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Shop — Maximum Action</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url(backgroung.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white; /* Цвет текста по умолчанию */
+            position: relative; /* Устанавливаем относительное позиционирование для body */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.75); /* Полупрозрачный черный цвет */
+            z-index: 1; /* Убедитесь, что он под изображением, но над фоном */
+        }
+
+        .container {
+            position: relative; /* Позиционирование контейнера */
+            z-index: 2; /* Делаем контейнер выше фона */
+            text-align: center; /* Центрирование текста */
+            padding: 20px; /* Отступы внутри контейнера */
+        }
+
+        h1 {
+            margin: 0; /* Убираем отступы */
+            font-size: 3.7em; /* Размер шрифта заголовка */
+            background-color: rgb(0, 73, 132);
+            border-radius: 50px;
+            display: inline-block;
+            box-shadow:5px 5px 55px rgb(0, 73, 132);
+            padding: 20px;
+            color: white;
+            text-shadow: 3px 3px 25px black;
+        }
+
+        p {
+            font-size: 1.8em; /* Размер шрифта абзаца */
+            font-family: Georgia, sans-serif;
+            margin: 10px 0; /* Отступы для абзацев */
+            text-shadow: 3px 3px 25px black;
+        }
+
+        .top-left {
+            position: absolute; 
+            top: 1%;
+            left: 1%;
+            width: 20%;
+            height: auto;
+            z-index: 3; /* Убедитесь, что логотип выше фона */
+        }
+
+        .top-left-card {
+            position: relative; 
+            border-radius: 25px;
+            box-shadow: 5px 5px 155px rgb(0, 73, 132);
+            width: 37%;
+            height: auto;
+            z-index: 2; /* Убедитесь, что картинка выше фона, но ниже текста */
+            margin: 20px auto; /* Центрирование картинки */
+            display: block; /* Блочный элемент для центрирования */
+        }
+
+        .system-requirements {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый цвет */
+            padding: 10px; /* Отступы внутри блока */
+            border-radius: 10px; /* Закругленные углы */
+            text-align: left; /* Выравнивание текста влево */
+            z-index: 2; /* Над фоном */
+        }
+
+        .price {
+            font-size: 3.5em; /* Размер шрифта цены */
+            background-color: #7fff00;
+            border-radius: 25px;
+            text-shadow: 3px 3px 25px black;
+            box-shadow: 5px 5px 55px rgb(43, 255, 0);
+            padding: 20px; /* Внутренние отступы */
+            display: inline-block; /* Обертывание в блок для центровки */
+            margin-top: 20px; /* Отступ сверху */
+        }
+
+        .top-right-buy {
+            position: absolute; 
+            top: 85%; /* Позиционирование кнопки покупки */
+            right: 3%;
+            width: 35%; /* Ширина кнопки */
+            max-width: 120px; /* Максимальная ширина для кнопки */
+            height: auto;
+            display: inline-block;
+            z-index: 3; /* Убедитесь, что кнопка выше фона */
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Уменьшение размера заголовка на мобильных */
+            }
+
+            p {
+                font-size: 1em; /* Уменьшение размера текста на мобильных */
+            }
+
+            .top-left-card {
+                width: 90%; /* Увеличение ширины карточки на мобильных */
+            }
+
+            .top-right-buy {
+                width: 50%; /* Увеличение ширины кнопки на мобильных */
+                max-width: 80px; /* Уменьшение максимальной ширины на мобильных */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="key-shop.html"> 
+        <img src="KEYShop.png" alt="Логотип магазина" class="top-left">
+    </a>
+    
+    <img src="maximum-glava.jpg" alt="witcher" class="top-left-card">
+
+    <div class="container">
+        <h1><u>Maximum Action</u></h1>
+        <p>"MAXIMUM Action" это жестокий и увлекательный физический шутер от первого лица, основанный на гонконгском кинематографе, героическом кровопролитии в замедленной съемке и олдскульном FPS-экшене.</p>
+        <p>Покупая данный товар, вы соглашаетесь с <a href="sogl.html">пользовательским соглашением.</a></p>
+        
+        <div class="system-requirements">
+            <p>Системные требования:</p>
+            <p>МИНИМАЛЬНЫЕ:</p>
+            <p>ОС: Windows 7 Or Later</p>
+            <p>Процессор: 2.4GHZ Dual Core Processor Or Higher</p>
+            <p>Оперативная память: 4 GB ОЗУ</p>
+            <p>Видеокарта: GeForce 9800GT Or Equivalent</p>
+            <p>DirectX: версии 9.0</p>
+            <p> Место на диске: 1 GB</p>
+            <p><a href="https://hardrank.net/ru/game/maximum-action" target="_blank" title="Проверить пойдет ли игра?" style="color: lightblue;">Проверить пойдет ли игра?</a></p>
+        </div>
+
+        <div class="price">
+            <a href="key-shop.html">
+                <s>899</s> 699 Рублей
+        </a>
+        </div>
+    </div> 
+
+</body>
+</html>

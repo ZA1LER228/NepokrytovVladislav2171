@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="keywords" content="Key shop, ключи стим, keys steam">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Shop — магазин лицензионных ключей Steam</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url(backgroung.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            z-index: 500;
+        }
+
+        .header {
+            position: relative;
+            z-index: 1000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header-vk {
+            position: relative;
+            z-index: 1000;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            z-index: 2000;
+        }
+
+        .vk {
+            max-width: 8%;
+            height: auto;
+            z-index: 2000;
+            position: absolute; /* Позиционирование */
+             /* Отступ сверху, при необходимости измените значение */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            z-index: 1000;
+            position: relative;
+        }
+        .header-support {
+            position: relative;
+            z-index: 1000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 5px 5px 55px rgba(255, 255, 255, 0.2);
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 5px 5px 30px rgb(255, 255, 255);
+            transition: transform 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+        }
+        .top-left {
+            position: absolute; 
+            top: 23px;
+            left: 20px;
+            width: 70px;
+            height: auto;
+            z-index: 1020;
+        }
+        .top-left-cube {
+            position: absolute; 
+            top: 20px;
+            left: 10px;
+            width: 90px;
+            height: 80px;
+            z-index: 1000;
+            border-radius: 50px;
+            box-shadow: 5px 5px 30px rgb(255, 0, 0);
+        }
+        .top-left-line {
+            width: calc(100% - 40px); /* Полная ширина за вычетом отступов */
+            height: 20px; /* Высота линии */
+            background-color: rgb(225, 0, 255); /* Цвет линии */
+            border-radius: 50px; /* Закругленные углы, если необходимо */
+            box-shadow: 5px 5px 30px rgb(225, 0, 255); /* Тень для эффекта */
+            position: absolute; /* Позиционирование */
+            top: 240px; /* Расположение сверху */
+            left: 20px; /* Отступ слева для линии */
+            z-index: 2000; /* Порядок наложения */
+        }
+        
+    </style>      
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="header">
+        <a href="key-shop.html">
+            <img src="KEYShop.png" alt="Описание картинки" class="logo">
+        </a>
+
+        <a href="support.html"> 
+            <img src="back-support.jpg" alt="Counter — Strike 2" class="top-left-cube"><!--Первый товар-->
+        </a>
+
+        <img src="back-support.jpg" alt="Counter — Strike 2" class="top-left-line"><!--Первый товар-->
+    
+        <a href="support.html"> 
+            <img src="support.png" alt="Counter — Strike 2" class="top-left"><!--Первый товар-->
+        </a>
+    </div>
+
+    <div class="container">
+        <a href="cs2.html" class="card">
+            <img src="cs2.jpeg" alt="Counter — Strike 2">
+            <div class="card-title">Counter-Strike 2</div>
+        </a>
+        <a href="dayz.html" class="card">
+            <img src="dayz.jpeg" alt="DayZ">
+            <div class="card-title">DayZ</div>
+        </a>
+        <a href="rust.html" class="card">
+            <img src="rust.jpeg" alt="RUST">
+            <div class="card-title">RUST</div>
+        </a>
+        <a href="miside.html" class="card">
+            <img src="miside.jpg" alt="MiSide">
+            <div class="card-title">MiSide</div>
+        </a>
+        <a href="raft.html" class="card">
+            <img src="raft.jpg" alt="RAFT">
+            <div class="card-title">RAFT</div>
+        </a>
+        <a href="terraria.html" class="card">
+            <img src="terraria-icon.jpg" alt="Terraria">
+            <div class="card-title">Terraria</div>
+        </a>
+        <a href="bodycam.html" class="card">
+            <img src="bodycam-icon.jpg" alt="Bodycam">
+            <div class="card-title">BODYCAM</div>
+        </a>
+        <a href="cuphead.html" class="card">
+            <img src="cuphead.jpg" alt="Cuphead">
+            <div class="card-title">Cuphead</div>
+        </a>
+        <a href="hotline.html" class="card">
+            <img src="hotline.jpg" alt="Hotline Miami">
+            <div class="card-title">Hotline Miami</div>
+        </a>
+        <a href="hotline2.html" class="card">
+            <img src="hotline2.jpg" alt="Hotline Miami 2">
+            <div class="card-title">Hotline Miami 2</div>
+        </a>
+        <a href="maximum.html" class="card">
+            <img src="maximum-icon.jpg" alt="Maximum">
+            <div class="card-title">Maximum Action</div>
+        </a>
+        <a href="sniper.html" class="card">
+            <img src="sniper.jpg" alt="Sniper">
+            <div class="card-title">Sniper Elite:Resistance</div>
+        </a>
+        <a href="Avowed.html" class="card">
+            <img src="Avowed.jpg" alt="Avowed">
+            <div class="card-title">Avowed</div>
+        </a>
+        <a href="stalker.html" class="card">
+            <img src="stalker123.jpg" alt="Stalker">
+            <div class="card-title">Stalker 2: Heart of Chernobyl</div>
+        </a>
+        <a href="days.html" class="card">
+            <img src="days.jpg" alt="Days">
+            <div class="card-title">7 Days to Die</div>
+        </a>
+        <a href="zomboid.html" class="card">
+            <img src="zomboid.jpg" alt="Zomboid">
+            <div class="card-title">Project Zomboid</div>
+        </a>
+        <a href="forest.html" class="card">
+            <img src="forest.jpg" alt="Forest">
+            <div class="card-title"> The Forest</div>
+        </a>
+        <a href="ready.html" class="card">
+            <img src="ready.jpg" alt="Ready or Not">
+            <div class="card-title">Ready or Not</div>
+        </a>
+        <a href="phasma.html" class="card">
+            <img src="phasma.jpg" alt="Phasmophobia">
+            <div class="card-title">Phasmophobia</div>
+        </a>
+        <a href="liar.html" class="card">
+            <img src="liar.jpg" alt="Liar's Bar">
+            <div class="card-title">Liar's Bar</div>
+        </a>
+        <a href="gmod.html" class="card">
+            <img src="gmod.png" alt="Garry's Mod">
+            <div class="card-title">Garry's Mod</div>
+        </a>
+        <a href="altushka.html" class="card">
+            <img src="altushka.jpg" alt="Altushka">
+            <div class="card-title">Altushka</div>
+        </a>
+        <a href="metro.html" class="card">
+            <img src="metro.jpg" alt="Metro Exodus">
+            <div class="card-title">Metro Exodus</div>
+        </a>
+        <a href="stray.html" class="card">
+            <img src="stray.jpg" alt="Stray">
+            <div class="card-title">Stray</div>
+        </a>
+        <a href="hogwarts.html" class="card">
+            <img src="hogwarts.jpg" alt="Hogwarts Legacy">
+            <div class="card-title">Hogwarts Legacy</div>
+        </a>
+        <a href="witcher.html" class="card">
+            <img src="witcher.jpg" alt="The Witcher 3">
+            <div class="card-title">The Witcher 3</div>
+        </a>
+        <a href="cyebr.html" class="card">
+            <img src="cyber.jpg" alt="Cyberpunk 2077">
+            <div class="card-title">Cyberpunk 2077</div>
+        </a>
+        <a href="fallout.html" class="card">
+            <img src="fallout.jpg" alt="Fallout 76">
+            <div class="card-title">Fallout 76</div>
+        </a>
+        <a href="hitman.html" class="card">
+            <img src="hitman.jpg" alt="HITMAN 3">
+            <div class="card-title">HITMAN 3</div>
+        </a>
+        <a href="farcry.html" class="card">
+            <img src="farcry.jpg" alt="Far Cry 6">
+            <div class="card-title">Far Cry 6</div>
+        </a>
+        <a href="rdr.html" class="card">
+            <img src="rdr.jpg" alt="Red Dead Redemption 2">
+            <div class="card-title">Red Dead Redemption 2</div>
+        </a>
+    </div>
+
+    <script>
+        // Здесь можно добавить JavaScript, если потребуется
+    </script>
+
+</body>
+</html>
